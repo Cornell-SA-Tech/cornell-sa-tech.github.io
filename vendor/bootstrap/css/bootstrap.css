@@ -6755,3 +6755,11 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+
+
+/* Custom classes start here */
+.width-20
+{
+	width: 19%;
+}
