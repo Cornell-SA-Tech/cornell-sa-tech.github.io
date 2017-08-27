@@ -28,6 +28,7 @@ a.active {
   outline: none;
 }
 a {
+	display: inline-block;
   color: #ff324a;
 }
 a:hover,
@@ -98,6 +99,25 @@ fieldset[disabled] .btn-primary.active {
 .btn-primary .badge {
   color: #ff324a;
   background-color: white;
+}
+.btn-secondary
+{
+	color: white;
+	background-color: black;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	width: 150px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active,
+.btn-secondary.active,
+.open .dropdown-toggle.btn-secondary {
+	color: white;
+	background-color: #ff324a;
 }
 .btn-xl {
   color: white;
