@@ -6786,3 +6786,17 @@ button.close {
 {
 	width: 19%;
 }
+.enlarge
+{
+	transition: all .15s ease-in-out;
+}
+.enlarge:hover,
+.enlarge:focus
+{
+	color: white;
+	transform: scale(1.1);
+}
+.enlarge:active
+{
+	transform: scale(0.95);
+}

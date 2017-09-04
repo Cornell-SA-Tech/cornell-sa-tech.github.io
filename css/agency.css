@@ -130,7 +130,7 @@ fieldset[disabled] .btn-primary.active {
   font-size: 18px;
   padding: 20px 40px;
 }
-.btn-xl:hover,
+/*.btn-xl:hover,
 .btn-xl:focus,
 .btn-xl:active,
 .btn-xl.active,
@@ -161,7 +161,7 @@ fieldset[disabled] .btn-xl:active,
 fieldset[disabled] .btn-xl.active {
   background-color: #ff324a;
   border-color: #ff324a;
-}
+}*/
 .btn-xl .badge {
   color: #ff324a;
   background-color: white;
