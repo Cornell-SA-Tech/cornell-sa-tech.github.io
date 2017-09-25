@@ -306,8 +306,8 @@ header .intro-text .intro-heading {
   header .intro-text .intro-lead-in {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 25px;
+    line-height: 25px;
     margin-bottom: 25px;
   }
   header .intro-text .intro-heading {
@@ -583,7 +583,7 @@ section h3.section-subheading {
 }
 .team-member img {
   margin: 0 auto;
-  border: 7px solid white;
+  border: 7px solid lightgray;
 }
 .team-member h4 {
   margin-top: 25px;
