@@ -6800,3 +6800,10 @@ button.close {
 {
 	transform: scale(0.95);
 }
+#places .row div
+{
+    display: table-cell;
+    vertical-align: middle;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
