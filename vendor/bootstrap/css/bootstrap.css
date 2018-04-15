@@ -1621,17 +1621,6 @@ pre code {
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
 }
-.row .col-sm-2
-{
-  float: none;
-  vertical-align: top;
-  display: inline-block;
-}
-#team .row
-{
-  display: inline-table;
-  text-align: center;
-}
 .col-xs-12 {
   width: 100%;
 }
@@ -1788,12 +1777,6 @@ pre code {
 @media (min-width: 768px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
-  }
-  .row .col-sm-2
-  {
-    float: none;
-    vertical-align: top;
-    display: inline-block;
   }
   .col-sm-12 {
     width: 100%;
@@ -1952,12 +1935,6 @@ pre code {
 @media (min-width: 992px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-  }
-  .row .col-sm-2
-  {
-    float: none;
-    vertical-align: top;
-    display: inline-block;
   }
   .col-md-12 {
     width: 100%;
@@ -6778,31 +6755,3 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
-
-
-
-/* Custom classes start here */
-.width-20
-{
-	width: 19%;
-}
-.enlarge
-{
-	transition: all .15s ease-in-out;
-}
-.enlarge:hover,
-.enlarge:focus
-{
-	color: white;
-	transform: scale(1.1);
-}
-.enlarge:active
-{
-	transform: scale(0.95);
-}
-#places .row th
-{
-    vertical-align: middle;
-    border-right: 8px solid transparent;
-    border-left: 8px solid transparent;
-}
