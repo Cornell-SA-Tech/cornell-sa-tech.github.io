@@ -78,7 +78,7 @@ gulp.task('browserSync', function() {
     browserSync.init({
         server: {
             baseDir: ''
-        },
+        }
     })
 });
 
