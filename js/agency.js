@@ -1,33 +1,50 @@
-// Agency Theme JavaScript
-
-(function($) {
+(function ($) {
     "use strict"; // Start of use strict
 
-    // jQuery for page scrolling feature - requires jQuery Easing plugin
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - 50)
-        }, 1250, 'easeInOutExpo');
-        event.preventDefault();
+    // Smooth scrolling using jQuery easing
+    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: (target.offset().top - 54)
+                }, 1000, "easeInOutExpo");
+                return false;
+            }
+        }
     });
 
-    // Highlight the top nav as scrolling occurs
+    // Closes responsive menu when a scroll trigger link is clicked
+    $('.js-scroll-trigger').click(function () {
+        $('.navbar-collapse').collapse('hide');
+    });
+
+    // Activate scrollspy to add active class to navbar items on scroll
     $('body').scrollspy({
-        target: '.navbar-fixed-top',
-        offset: 51
+        target: '#mainNav',
+        offset: 56
     });
 
-    // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function(){ 
-            $('.navbar-toggle:visible').click();
-    });
-
-    // Offset for Main Navigation
+    // Collapse Navbar
     $('#mainNav').affix({
         offset: {
             top: 100
         }
-    })
+    });
+
+    // Collapse the navbar when page is scrolled
+    $(window).scroll(navbarCollapse);
+
+    // Hide navbar when modals trigger
+    var portfolioModal = $('.portfolio-modal');
+
+    portfolioModal.on('show.bs.modal', function (e) {
+        $(".navbar").addClass("d-none");
+    });
+    
+    portfolioModal.on('hidden.bs.modal', function (e) {
+        $(".navbar").removeClass("d-none");
+    });
 
 })(jQuery); // End of use strict
