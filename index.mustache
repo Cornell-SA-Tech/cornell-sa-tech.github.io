@@ -47,6 +47,9 @@
     <!-- Theme CSS -->
     <link href="css/agency.min.css" rel="stylesheet">
 
+    <!-- Theme CSS -->
+    <link href="css/dti-agency.min.css" rel="stylesheet">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -186,7 +189,7 @@
             {{/row-start}}
 
             <div class="col-sm-6 portfolio-item" style="margin-top:20px;">
-                <a href="{{{modalId}}}" class="portfolio-link" data-toggle="modal">
+                <a href="#{{{modalId}}}" class="portfolio-link" data-toggle="modal">
                     <div class="portfolio-caption">
                         <h4>{{title}}</h4>
                     </div>
@@ -232,7 +235,13 @@
 
                     <div class="col-sm-2">
                         <div class="team-member">
-                            <img src="{{{image}}}" class="img-responsive img-circle" alt="">
+                            {{#image}}
+                                <img src="{{{image}}}" class="img-responsive img-circle" alt="">
+                            {{/image}}
+                            {{^image}}
+                                <img src="img/missing_photo.png" class="img-responsive img-circle" alt="">
+                            {{/image}}
+
                             <h4>{{name}}</h4>
                             <p class="text-muted">{{role}}</p>
                             <ul class="list-inline social-buttons">
@@ -394,8 +403,16 @@
                                 {{/playstore}}
                                 <div></div>
 
+                                {{#github}}
+                                    <a href="{{{github}}}" style="margin-right: 8px">
+                                        <button type="button" class="btn btn-secondary"><i class="fa fa-github"></i>
+                                            Github
+                                        </button>
+                                    </a>
+                                {{/github}}
+
                                 {{#ios-github}}
-                                    <a href="https://github.com/cornell-dti/Rescuer" style="margin-right: 8px">
+                                    <a href="{{{ios-github}}}" style="margin-right: 8px">
                                         <button type="button" class="btn btn-secondary"><i class="fa fa-github"></i>
                                             iOS
                                         </button>
@@ -403,7 +420,7 @@
                                 {{/ios-github}}
 
                                 {{#android-github}}
-                                    <a href="https://github.com/cornell-dti/resCUer-app-android">
+                                    <a href="{{{android-github}}}">
                                         <button type="button" class="btn btn-secondary"><i class="fa fa-github"></i>
                                             Android
                                         </button>

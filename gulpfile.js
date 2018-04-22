@@ -33,7 +33,7 @@ gulp.task('mustache', function () {
 
 // Compile LESS files from /less into /css
 gulp.task('less', function () {
-    return gulp.src('less/agency.less')
+    return gulp.src(['less/agency.less', 'less/dti-agency.less'])
         .pipe(less())
         .pipe(header(banner, {pkg: pkg}))
         .pipe(gulp.dest('css'))
@@ -44,7 +44,7 @@ gulp.task('less', function () {
 
 // Minify compiled CSS
 gulp.task('minify-css', ['less'], function () {
-    return gulp.src('css/agency.css')
+    return gulp.src(['css/agency.css', 'css/dti-agency.css'])
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('css'))
