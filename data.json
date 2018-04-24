@@ -52,7 +52,8 @@
         {
           "image": "img/team/juliak.jpg",
           "name": "Julia Kruk",
-          "role": "Product Manager"
+          "role": "Product Manager",
+          "linkedin": "https://www.linkedin.com/in/julia-kruk-854155112/"
         },
         {
           "image": "img/team/davidc.jpg",
@@ -220,7 +221,7 @@
         {
           "image": "img/team/jessem.jpg",
           "name": "Jesse Mansoor",
-          "role": "Designer"
+          "role": "Designer (Away)"
         },
         {
           "image": "img/team/jessicap.jpg",
@@ -236,7 +237,7 @@
         {
           "image": "img/team/alicez.jpg",
           "name": "'Alice' Ran Zhou",
-          "role": "Product Manager",
+          "role": "Product Manager (Away)",
           "github": "https://github.com/rz96",
           "linkedin": "https://www.linkedin.com/in/aranzhou/"
         },
@@ -305,7 +306,7 @@
         {
           "image": "img/team/juliay.jpg",
           "name": "Julia Yang",
-          "role": "Developer",
+          "role": "Developer (Away)",
           "linkedin": "http://linkedin.com/in/juliayangg"
         },
         {
@@ -375,6 +376,14 @@
           "image": "img/team/horaceh.jpg",
           "name": "Horace He",
           "role": "Developer"
+        },
+        {
+          "image": "img/team/ryan_slama.png",
+          "name": "Ryan Slama",
+          "role": "Front-End Developer",
+          "linkedin": "https://www.linkedin.com/in/ryan-slama-961738137/",
+          "github": "https://github.com/glitched",
+          "website": "http://ryanslama.com/"
         },
         {
           "image": "img/team/vanessaw.jpg",
@@ -452,13 +461,6 @@
           "name": "Imani Majied",
           "role": "Business",
           "linkedin": "http://linkedin.com/in/imani-majied-98137b96"
-        },
-        {
-          "image": "img/team/nehar.jpg",
-          "name": "Neha Rao",
-          "role": "Marketing & Rebranding",
-          "github": "https://github.com/neharao98",
-          "linkedin": "https://www.linkedin.com/in/neha-rao-75a5bb133/"
         },
         {
           "image": "img/team/sonyat.jpg",
